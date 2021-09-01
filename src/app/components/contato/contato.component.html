@@ -1,0 +1,9 @@
+<section>
+    <h3>{{contato.nome}}</h3>
+    <h4>{{contato.email}}</h4>
+    
+    <ul>
+        <li *ngFor = "let telefone of contato.telefones" ><a href="tel:{{telefone}}">{{telefone}}</a></li>
+    </ul>
+    <a href="#">Editar</a>
+</section>
